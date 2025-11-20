@@ -94,7 +94,7 @@ export const About: React.FC = () => {
                     </div>
                     <div className="relative overflow-hidden rounded-sm shadow-lg group">
                         <img 
-                            src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/refs/heads/main/podio_maratona.avif" 
+                            src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/refs/heads/main/trofeu.avif" 
                             alt="Treino funcional" 
                             className="w-full h-64 object-cover transition-all duration-500"
                         />
