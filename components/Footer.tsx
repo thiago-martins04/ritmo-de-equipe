@@ -11,14 +11,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     <footer className="bg-zinc-100 text-zinc-600 pt-12 pb-8 border-t border-zinc-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-6">
-            <div className="flex items-center space-x-2 select-none">
+            <button 
+              onClick={() => onNavigate?.('home')}
+              className="flex items-center space-x-2 select-none hover:opacity-80 transition-opacity cursor-pointer"
+              aria-label="Voltar ao início"
+            >
                 <div className="bg-lime-400 p-1 rounded-sm rotate-3">
                    <Zap className="h-6 w-6 text-zinc-900" />
                 </div>
                 <span className="text-2xl font-bold uppercase tracking-wider text-zinc-900 font-display">
                   Ritmo<span className="text-lime-600"> de </span>Equipe
                 </span>
-            </div>
+            </button>
             <div className="flex space-x-6">
                 <a 
                   href="https://www.instagram.com/bia.personal_/" 
