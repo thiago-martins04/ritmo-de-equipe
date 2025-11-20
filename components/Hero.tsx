@@ -48,11 +48,12 @@ export const Hero: React.FC = () => {
                 <ChevronRight className="ml-2 h-5 w-5" />
               </a>
               <a
-                href="#methodology"
-                onClick={(e) => handleScroll(e, 'methodology')}
+                href="https://api.whatsapp.com/message/ZHVEC5OA4N5FC1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center px-8 py-3.5 border-2 border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white transition-all font-bold uppercase tracking-wider rounded-sm min-w-[160px]"
               >
-                Como funciona
+                WhatsApp
               </a>
             </div>
           </div>

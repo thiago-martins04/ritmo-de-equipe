@@ -113,56 +113,65 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-zinc-900 hover:text-lime-600 transition-colors"
+              className="p-2 text-zinc-900 hover:text-lime-600 transition-colors relative w-10 h-10 flex items-center justify-center"
+              aria-expanded={isOpen}
+              aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
             >
-              {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+              <span className={`absolute transition-all duration-300 transform ${isOpen ? 'opacity-0 rotate-90 scale-50' : 'opacity-100 rotate-0 scale-100'}`}>
+                <Menu className="h-8 w-8" />
+              </span>
+              <span className={`absolute transition-all duration-300 transform ${isOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-50'}`}>
+                <X className="h-8 w-8" />
+              </span>
             </button>
           </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white border-b border-zinc-100 absolute w-full top-full left-0 shadow-xl h-screen">
-          <div className="px-4 pt-2 pb-6 space-y-2">
-            {NAV_ITEMS.map((item) => (
-              <button
-                key={item.label}
-                onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left px-3 py-4 text-lg font-bold uppercase tracking-wider text-zinc-600 hover:text-lime-600 hover:bg-zinc-50 border-l-4 border-transparent hover:border-lime-400 transition-all"
-              >
-                {item.label}
-              </button>
-            ))}
-             
-            <div className="border-t border-zinc-100 my-2"></div>
-
+      <div 
+        className={`md:hidden bg-white border-b border-zinc-100 absolute w-full top-full left-0 shadow-xl transition-all duration-500 ease-in-out overflow-hidden ${
+          isOpen ? 'max-h-screen opacity-100 visible' : 'max-h-0 opacity-0 invisible'
+        }`}
+      >
+        <div className="px-4 pt-2 pb-6 space-y-2 h-screen overflow-y-auto">
+          {NAV_ITEMS.map((item) => (
             <button
-                onClick={() => {
-                    onNavigate('bodybuilding');
-                    setIsOpen(false);
-                }}
-                className="block w-full text-left px-3 py-4 text-lg font-bold uppercase tracking-wider text-zinc-900 hover:text-lime-600 hover:bg-zinc-50 border-l-4 border-transparent hover:border-lime-400 transition-all flex items-center"
+              key={item.label}
+              onClick={() => handleNavClick(item.href)}
+              className="block w-full text-left px-3 py-4 text-lg font-bold uppercase tracking-wider text-zinc-600 hover:text-lime-600 hover:bg-zinc-50 border-l-4 border-transparent hover:border-lime-400 transition-all"
             >
-                <Dumbbell className="w-5 h-5 mr-3" />
-                Musculação
+              {item.label}
             </button>
+          ))}
+           
+          <div className="border-t border-zinc-100 my-2"></div>
 
-            <div className="pt-4">
-              <a
-                href="https://api.whatsapp.com/message/ZHVEC5OA4N5FC1?autoload=1&app_absent=0"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsOpen(false)}
-                className="flex items-center justify-center gap-2 w-full text-center bg-lime-400 text-zinc-900 px-4 py-4 font-bold uppercase hover:bg-lime-500"
-              >
-                <WhatsAppIcon className="w-5 h-5" />
-                Entre em contato
-              </a>
-            </div>
+          <button
+              onClick={() => {
+                  onNavigate('bodybuilding');
+                  setIsOpen(false);
+              }}
+              className="block w-full text-left px-3 py-4 text-lg font-bold uppercase tracking-wider text-zinc-900 hover:text-lime-600 hover:bg-zinc-50 border-l-4 border-transparent hover:border-lime-400 transition-all flex items-center"
+          >
+              <Dumbbell className="w-5 h-5 mr-3" />
+              Musculação
+          </button>
+
+          <div className="pt-4 pb-20">
+            <a
+              href="https://api.whatsapp.com/message/ZHVEC5OA4N5FC1?autoload=1&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center justify-center gap-2 w-full text-center bg-lime-400 text-zinc-900 px-4 py-4 font-bold uppercase hover:bg-lime-500"
+            >
+              <WhatsAppIcon className="w-5 h-5" />
+              Entre em contato
+            </a>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
