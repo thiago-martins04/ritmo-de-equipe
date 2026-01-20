@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://ritmo-de-equipe.vercel.app/sitemap.xml
