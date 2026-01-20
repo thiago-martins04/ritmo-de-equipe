@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Zap, Dumbbell } from 'lucide-react';
+import { Menu, X, Dumbbell } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 import { PageView } from '../App';
 
@@ -7,6 +8,23 @@ interface NavbarProps {
   currentPage: PageView;
   onNavigate: (page: PageView) => void;
 }
+
+const CustomLogo = ({ className }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 24 24" 
+    className={className}
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path 
+      d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round"
+    />
+  </svg>
+);
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg 
@@ -34,13 +52,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
   const handleNavClick = (href: string) => {
     if (currentPage !== 'home') {
       onNavigate('home');
-      // Slight delay to allow rendering of home page before scrolling
       setTimeout(() => {
         const element = document.querySelector(href);
         if (element) element.scrollIntoView({ behavior: 'smooth' });
       }, 100);
     } else {
-       // Normal anchor behavior handles this, but we can force smooth scroll if needed
        const element = document.querySelector(href);
        if (element) element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -63,18 +79,15 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#hero" onClick={handleLogoClick} className="flex items-center space-x-2 group cursor-pointer">
-            {/* Removed rounded-sm to make it a straight square */}
             <div className="bg-lime-400 p-1 rotate-3 group-hover:rotate-12 transition-transform">
-                <Zap className="h-6 w-6 text-zinc-900" />
+                <CustomLogo className="h-6 w-6 text-zinc-900" />
             </div>
             <span className="text-2xl font-bold uppercase tracking-wider text-zinc-900 font-display">
               Ritmo<span className="text-lime-600"> de </span>Equipe
             </span>
           </a>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {/* Standard Nav Items (Only show if on home, or redirect to home) */}
             {NAV_ITEMS.map((item) => (
               <button
                 key={item.label}
@@ -85,10 +98,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
               </button>
             ))}
             
-            {/* Divider */}
             <div className="h-6 w-px bg-zinc-300"></div>
 
-            {/* Musculação Button */}
              <button
               onClick={() => onNavigate('bodybuilding')}
               className={`flex items-center text-sm font-bold uppercase tracking-widest transition-colors ${
@@ -110,7 +121,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -129,7 +139,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div 
         className={`md:hidden bg-white border-b border-zinc-100 absolute w-full top-full left-0 shadow-xl transition-all duration-500 ease-in-out overflow-hidden ${
           isOpen ? 'max-h-screen opacity-100 visible' : 'max-h-0 opacity-0 invisible'

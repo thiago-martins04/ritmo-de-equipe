@@ -1,19 +1,15 @@
+
 import React from 'react';
 import { Dumbbell, Check, Activity, Scale, Shield } from 'lucide-react';
 
 export const BodybuildingHome: React.FC = () => {
   return (
     <div className="animate-in fade-in duration-500 bg-white min-h-screen text-zinc-900 selection:bg-lime-400 selection:text-zinc-900">
-      {/* Hero Section - Light Industrial Split */}
       <section className="relative min-h-[85vh] flex items-center pt-24 pb-12 overflow-hidden bg-zinc-50">
-        
-        {/* Abstract Background Elements */}
         <div className="absolute top-0 right-0 w-[40%] h-full bg-zinc-200/50 -skew-x-12 origin-top-right translate-x-32 hidden lg:block"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            
-            {/* Text Content */}
             <div className="order-2 lg:order-1">
                <div className="inline-flex items-center space-x-2 border-l-4 border-lime-400 pl-4 mb-8">
                   <span className="text-lime-600 font-bold uppercase tracking-widest text-xs md:text-sm">Consultoria Especializada</span>
@@ -30,21 +26,17 @@ export const BodybuildingHome: React.FC = () => {
                </p>
             </div>
 
-            {/* Image - Framed & Industrial Style (Light Version) */}
             <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
                 <div className="relative z-10 w-full max-w-md">
-                    {/* Decorative Frame */}
                     <div className="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-lime-400 z-20"></div>
                     <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-lime-400 z-20"></div>
                     
-                    {/* Image Container */}
                     <div className="relative shadow-2xl shadow-zinc-200">
                         <img 
-                            src="/images/musculacao.avif" 
-                            alt="Treino de Força" 
+                            src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/refs/heads/main/ritmo-de-equipe-musculacao.avif" 
+                            alt="Atleta realizando musculação pesada" 
                             className="w-full h-[350px] md:h-[450px] object-cover filter"
                         />
-                        {/* Overlay Gradient - Adjusted for readability of text over image */}
                         <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent pointer-events-none"></div>
                         
                         <div className="absolute bottom-6 left-6 right-6">
@@ -59,12 +51,10 @@ export const BodybuildingHome: React.FC = () => {
                     </div>
                 </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* Stats Strip - Light */}
       <div className="border-y border-zinc-200 bg-white">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-zinc-200">
@@ -88,7 +78,6 @@ export const BodybuildingHome: React.FC = () => {
          </div>
       </div>
 
-      {/* Methodology - Light Cards */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-16">
@@ -132,7 +121,6 @@ export const BodybuildingHome: React.FC = () => {
         </div>
       </section>
 
-      {/* Pricing - Light Theme */}
       <section className="py-16 md:py-24 bg-zinc-50" id="plans">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -141,7 +129,6 @@ export const BodybuildingHome: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                {/* Plan 1 */}
                 <div className="bg-white p-8 rounded-sm border border-zinc-200 flex flex-col hover:border-zinc-300 hover:shadow-lg transition-all">
                     <h3 className="text-lg font-bold text-zinc-400 uppercase tracking-wider mb-4">Musculação</h3>
                     <div className="flex items-baseline mb-8">
@@ -163,7 +150,6 @@ export const BodybuildingHome: React.FC = () => {
                     </a>
                 </div>
 
-                {/* Plan 2 */}
                 <div className="bg-white p-8 rounded-sm border-2 border-lime-400 relative flex flex-col shadow-xl transform md:-translate-y-4">
                     <div className="absolute top-0 right-0 bg-lime-400 text-zinc-900 text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Melhor Opção</div>
                     <h3 className="text-lg font-bold text-zinc-900 uppercase tracking-wider mb-4">Híbrido (Corrida + Musculação)</h3>
