@@ -6,7 +6,7 @@ export const Community: React.FC = () => {
       {/* Image Section - Full Width */}
       <div className="w-full h-[250px] md:h-[400px] lg:h-[450px] relative">
         <img 
-          src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/refs/heads/main/comunidadde.avif" 
+          src="/images/comunidadde.avif"
           alt="Comunidade de Corredores" 
           className="w-full h-full object-cover object-center"
         />

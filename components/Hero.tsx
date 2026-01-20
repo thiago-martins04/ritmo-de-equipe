@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
                {/* Image Container with constrained height */}
                <div className="relative overflow-hidden rounded-sm shadow-2xl">
                   <img
-                    src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/main/IMG_0389%20(1).jpg"
+                    src="/images/hero_capa.avif"
                     alt="Corredor em movimento"
                     className="w-full h-[350px] md:h-[450px] lg:h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />

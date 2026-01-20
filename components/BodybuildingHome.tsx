@@ -40,7 +40,7 @@ export const BodybuildingHome: React.FC = () => {
                     {/* Image Container */}
                     <div className="relative shadow-2xl shadow-zinc-200">
                         <img 
-                            src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/refs/heads/main/musculacao.avif" 
+                            src="/images/musculacao.avif" 
                             alt="Treino de Força" 
                             className="w-full h-[350px] md:h-[450px] object-cover filter"
                         />

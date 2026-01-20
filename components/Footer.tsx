@@ -16,7 +16,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               className="flex items-center space-x-2 select-none hover:opacity-80 transition-opacity cursor-pointer"
               aria-label="Voltar ao início"
             >
-                <div className="bg-lime-400 p-1 rounded-sm rotate-3">
+                {/* Updated visual to match: Removed rounded-sm */}
+                <div className="bg-lime-400 p-1 rotate-3">
                    <Zap className="h-6 w-6 text-zinc-900" />
                 </div>
                 <span className="text-2xl font-bold uppercase tracking-wider text-zinc-900 font-display">
@@ -38,7 +39,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         <div className="border-t border-zinc-200 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-zinc-500">
           <p>&copy; {new Date().getFullYear()} Ritmo de Equipe. Todos os direitos reservados.</p>
-          <p className="mt-2 md:mt-0 font-medium">Run Fast. Run Strong.</p>
+          <div className="flex items-center gap-4 mt-2 md:mt-0">
+            <p className="font-medium">Run Fast. Run Strong.</p>
+          </div>
         </div>
       </div>
     </footer>

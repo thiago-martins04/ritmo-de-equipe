@@ -63,7 +63,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#hero" onClick={handleLogoClick} className="flex items-center space-x-2 group cursor-pointer">
-            <div className="bg-lime-400 p-1 rounded-sm rotate-3 group-hover:rotate-12 transition-transform">
+            {/* Removed rounded-sm to make it a straight square */}
+            <div className="bg-lime-400 p-1 rotate-3 group-hover:rotate-12 transition-transform">
                 <Zap className="h-6 w-6 text-zinc-900" />
             </div>
             <span className="text-2xl font-bold uppercase tracking-wider text-zinc-900 font-display">

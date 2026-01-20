@@ -68,7 +68,7 @@ export const About: React.FC = () => {
                 <div className="space-y-4 mt-8">
                     <div className="relative overflow-hidden rounded-sm shadow-lg group">
                         <img 
-                            src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/refs/heads/main/competicao.avif" 
+                            src="/images/competicao.avif" 
                             alt="Treinadora analisando dados" 
                             className="w-full h-64 object-cover transition-all duration-500"
                         />
@@ -76,7 +76,7 @@ export const About: React.FC = () => {
                     </div>
                     <div className="relative overflow-hidden rounded-sm shadow-lg group">
                         <img 
-                            src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/refs/heads/main/pista_2.avif" 
+                            src="/images/pista_2.avif" 
                             alt="Treinadora correndo" 
                             className="w-full h-48 object-cover transition-all duration-500"
                         />
@@ -86,7 +86,7 @@ export const About: React.FC = () => {
                 <div className="space-y-4">
                     <div className="relative overflow-hidden rounded-sm shadow-lg group">
                         <img 
-                            src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/refs/heads/main/pista.avif" 
+                            src="/images/pista.avif" 
                             alt="Medalhas e conquistas" 
                             className="w-full h-48 object-cover transition-all duration-500"
                         />
@@ -94,7 +94,7 @@ export const About: React.FC = () => {
                     </div>
                     <div className="relative overflow-hidden rounded-sm shadow-lg group">
                         <img 
-                            src="https://raw.githubusercontent.com/thiago-martins04/ritmodeequipe-site/refs/heads/main/trofeu.avif" 
+                            src="/images/trofeu.avif" 
                             alt="Treino funcional" 
                             className="w-full h-64 object-cover transition-all duration-500"
                         />
