@@ -72,20 +72,20 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Joyce',
     role: 'Atleta Amadora',
     content: 'Amei conhecer você esse ano. Voltar a correr acompanhada por vc tem feito muita diferença. Obrigada pelo conhecimento compartilhado e principalmente pelo acolhimento 🥰',
-    image: 'https://avatar.iran.liara.run/public/girl?username=Joyce'
+    image: 'female'
   },
   {
     id: 2,
     name: 'Paulo',
     role: 'Iniciante',
     content: 'Feliz por ontem, primeira prova oficial que participo e o calor estava bem forte, consegui fazer meu melhor tempo nos 5K e principalmente terminar a prova sem dores.',
-    image: 'https://avatar.iran.liara.run/public/boy?username=Paulo'
+    image: 'male'
   },
   {
     id: 3,
     name: 'Ana',
     role: 'Corredora a 1 ano',
     content: 'A corrida mudou minha vida! Agradeço à @bia.personal_ que minha nutricionista me apresentou, ela que me incentiva, orienta e sempre diz que vou conseguir 🏃🏾‍♀️.',
-    image: 'https://avatar.iran.liara.run/public/girl?username=Ana'
+    image: 'female'
   }
 ];
