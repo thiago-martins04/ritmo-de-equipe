@@ -57,7 +57,7 @@ export const PromoPopup: React.FC<PromoPopupProps> = ({ onClose }) => {
                <ShoppingBag className="w-6 h-6 text-lime-600" />
              </div>
              <h2 className="text-3xl font-bold text-zinc-900 font-display uppercase leading-tight tracking-tight">
-               Nova <span className="text-lime-600">Armadura</span>
+               Nossas <span className="text-lime-600">Camisetas</span>
              </h2>
           </div>
           
@@ -86,13 +86,8 @@ export const PromoPopup: React.FC<PromoPopupProps> = ({ onClose }) => {
         </div>
 
         {/* Badge Decorativo */}
-        <div className="bg-zinc-50 px-8 py-3 border-t border-zinc-100 flex justify-between items-center">
-          <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Edição Limitada • 100% Poliamida </span>
-          <div className="flex gap-1">
-             <div className="w-2 h-2 rounded-full bg-lime-400"></div>
-             <div className="w-2 h-2 rounded-full bg-zinc-200"></div>
-             <div className="w-2 h-2 rounded-full bg-zinc-200"></div>
-          </div>
+        <div className="bg-zinc-50 px-8 py-3 border-t border-zinc-100 flex justify-center items-center">
+          <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest text-center">Edição Limitada • 100% Poliamida</span>
         </div>
       </div>
     </div>
