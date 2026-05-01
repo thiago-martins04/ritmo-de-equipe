@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Dumbbell } from 'lucide-react';
+import { Menu, X, Dumbbell, ShoppingBag } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 import { PageView } from '../App';
 
@@ -69,13 +69,34 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
   };
 
   return (
-    <nav
-      className={`fixed w-full z-50 transition-all duration-500 border-b ${
-        scrolled 
-          ? 'bg-white/90 backdrop-blur-md border-zinc-200 py-3 shadow-sm' 
-          : 'bg-transparent border-transparent py-6'
-      }`}
-    >
+    <header className="fixed w-full z-50">
+      {currentPage === 'home' && (
+        <div className="bg-lime-400 text-zinc-900 py-2 px-4 shadow-sm border-b border-lime-500/20">
+          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-center">
+             <div className="flex items-center gap-2">
+                <ShoppingBag className="w-3.5 h-3.5 hidden sm:block" />
+                <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest">
+                  Camisetas Oficiais Ritmo de Equipe
+                </span>
+             </div>
+             <a 
+               href="https://api.whatsapp.com/message/ZHVEC5OA4N5FC1?autoload=1&app_absent=0" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.2em] bg-zinc-900 text-white px-3 py-1 rounded-sm hover:bg-zinc-800 transition-all transform hover:scale-105"
+             >
+               Garantir a minha
+             </a>
+          </div>
+        </div>
+      )}
+      <nav
+        className={`w-full transition-all duration-500 border-b ${
+          scrolled 
+            ? 'bg-white/90 backdrop-blur-md border-zinc-200 py-3 shadow-sm' 
+            : 'bg-transparent border-transparent py-6'
+        }`}
+      >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#hero" onClick={handleLogoClick} className="flex items-center space-x-2 group cursor-pointer">
@@ -183,5 +204,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
         </div>
       </div>
     </nav>
-  );
+  </header>
+);
 };

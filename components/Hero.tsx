@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20 md:pt-24 pb-12 overflow-hidden bg-zinc-50">
+    <section id="hero" className="relative min-h-screen flex items-center pt-32 md:pt-40 pb-12 overflow-hidden bg-zinc-50">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-[40%] h-full bg-zinc-100 skew-x-12 origin-bottom translate-x-32 hidden lg:block"></div>
       </div>

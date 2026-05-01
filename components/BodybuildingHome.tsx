@@ -5,7 +5,7 @@ import { Dumbbell, Check, Activity, Scale, Shield } from 'lucide-react';
 export const BodybuildingHome: React.FC = () => {
   return (
     <div className="animate-in fade-in duration-500 bg-white min-h-screen text-zinc-900 selection:bg-lime-400 selection:text-zinc-900">
-      <section className="relative min-h-[85vh] flex items-center pt-24 pb-12 overflow-hidden bg-zinc-50">
+      <section className="relative min-h-[85vh] flex items-center pt-24 md:pt-28 pb-12 overflow-hidden bg-zinc-50">
         <div className="absolute top-0 right-0 w-[40%] h-full bg-zinc-200/50 -skew-x-12 origin-top-right translate-x-32 hidden lg:block"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
