@@ -32,18 +32,18 @@ export const FEATURES: Feature[] = [
 export const PLANS: ServicePlan[] = [
   {
     title: 'Assessoria Corrida',
-    price: 'R$ 89,90',
+    price: 'R$ 99,90',
     features: [
       'Planilha via App',
       'Análise e feedback de cada treino',
       'Suporte via WhatsApp',
       'Planilhas mensais e ajustes quando necessário'
     ],
-    link: 'https://invoice.infinitepay.io/plans/ritmo-de-equipe/1ZjIaZI1yX'
+    link: 'https://invoice.infinitepay.io/plans/ritmo-de-equipe/2azz6cwrdF'
   },
   {
     title: 'Híbrido (Corrida + Musculação)',
-    price: 'R$ 129,90',
+    price: 'R$ 139,90',
     isPopular: true,
     features: [
       'Tudo do plano anterior',
@@ -51,7 +51,7 @@ export const PLANS: ServicePlan[] = [
       'Vídeos de execução de movimentos',
       'Suporte prioritário'
     ],
-    link: 'https://invoice.infinitepay.io/plans/ritmo-de-equipe/hR2uVr4WN'
+    link: 'https://invoice.infinitepay.io/plans/ritmo-de-equipe/7mzznWY8Kx'
   },
   {
     title: 'Personal Trainer (Presencial)',

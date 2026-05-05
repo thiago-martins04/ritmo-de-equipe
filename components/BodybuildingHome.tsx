@@ -132,7 +132,7 @@ export const BodybuildingHome: React.FC = () => {
                 <div className="bg-white p-8 rounded-sm border border-zinc-200 flex flex-col hover:border-zinc-300 hover:shadow-lg transition-all">
                     <h3 className="text-lg font-bold text-zinc-400 uppercase tracking-wider mb-4">Musculação</h3>
                     <div className="flex items-baseline mb-8">
-                        <span className="text-4xl font-bold text-zinc-900 font-display">R$ 79,90</span>
+                        <span className="text-4xl font-bold text-zinc-900 font-display">R$ 89,90</span>
                         <span className="text-zinc-400 ml-2">/mês</span>
                     </div>
                     <ul className="space-y-4 mb-8 flex-1">
@@ -141,7 +141,7 @@ export const BodybuildingHome: React.FC = () => {
                         <li className="flex items-center text-zinc-600"><Check className="h-4 w-4 text-lime-500 mr-3" /> Suporte via WhatsApp</li>
                     </ul>
                     <a 
-                        href="https://invoice.infinitepay.io/plans/ritmo-de-equipe/9lwew43XV"
+                        href="https://invoice.infinitepay.io/plans/ritmo-de-equipe/eFUtcCfHL"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block w-full py-4 bg-zinc-900 text-white text-center font-bold uppercase tracking-widest hover:bg-zinc-800 transition-colors rounded-sm"
@@ -154,7 +154,7 @@ export const BodybuildingHome: React.FC = () => {
                     <div className="absolute top-0 right-0 bg-lime-400 text-zinc-900 text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Melhor Opção</div>
                     <h3 className="text-lg font-bold text-zinc-900 uppercase tracking-wider mb-4">Híbrido (Corrida + Musculação)</h3>
                     <div className="flex items-baseline mb-8">
-                        <span className="text-4xl font-bold text-zinc-900 font-display">R$ 129,90</span>
+                        <span className="text-4xl font-bold text-zinc-900 font-display">R$ 139,90</span>
                         <span className="text-zinc-400 ml-2">/total</span>
                     </div>
                     <ul className="space-y-4 mb-8 flex-1">
@@ -164,7 +164,7 @@ export const BodybuildingHome: React.FC = () => {
                         <li className="flex items-center text-zinc-600"><Check className="h-4 w-4 text-lime-500 mr-3" /> Suporte Prioritário</li>
                     </ul>
                     <a 
-                        href="https://invoice.infinitepay.io/plans/ritmo-de-equipe/hR2uVr4WN"
+                        href="https://invoice.infinitepay.io/plans/ritmo-de-equipe/7mzznWY8Kx"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block w-full py-4 bg-lime-400 text-zinc-900 text-center font-bold uppercase tracking-widest hover:bg-lime-500 transition-colors rounded-sm shadow-md"
